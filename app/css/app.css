@@ -44,11 +44,11 @@ a {
     background-color: transparent;
 }
 .img_logo {
-    width: 500px;
+    width: 50%;
     height: auto;
     filter: invert(100%);
     margin-top: 35%;
-    margin-left: -10%;
+    margin-left: -15%;
 }
 .nav-tabs .nav-link {
     border-radius: 0.25rem;
