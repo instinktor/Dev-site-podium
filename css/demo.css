@@ -1,5 +1,7 @@
+@import '../font/font.css';
 html, body
 {
+	font-family: Neris Light!important;
 	padding: 0;
 	margin: 0;
 	width: 99%;
@@ -40,6 +42,9 @@ a, a:link, a:active, a:visited, a:hover
 {
 	color: inherit;
 	text-decoration: underline;
+}
+a:hover {
+	background-color: #222;
 }
 
 nav:not(.mm-menu)

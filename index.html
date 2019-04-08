@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="www.frebsite.nl" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+    <title>Швейная фабрика Подиум Р</title>
+
+    <link type="text/css" rel="stylesheet" href="css/demo.css" />
+    <link type="text/css" rel="stylesheet" href="js/jquery.mmenu.all.css" />
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('nav#menu').mmenu();
+        });</script>
+</head>
+
+<body>
+    <div class="fullscreen-bg">
+        <video poster="http://www.helaclothing.com/themes/hela_clothing/assets/images/bg-home.jpg" loop="" muted=""
+            autoplay="" x-webkit-airplay="allow" webkit-playsinline="webkit-playsinline" playsinline="playsinline"
+            data-video="0">
+            <source src="http://www.helaclothing.com/themes/hela_clothing/assets/images/bg-home.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="page">
+        <p class="text-right"><a href="#menu"><i class="fas fa-bars"></i></a> </p>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img class="img_logo animated fadeIn delay-1s" src="img/logo.png" alt="Швейная фабрика Подиум Р">
+            <p class="phone">
+                <h7>+7 800 777 9805</h7>
+            </P>
+
+        </div>
+    </div>
+    <nav id="menu"
+        class="mm-menu mm-menu_offcanvas mm-menu_pagedim-black mm-menu_position-right mm-menu_theme-black mm-menu_opened">
+        <div class="mm-panels">
+            <div id="mm-1" class="mm-panel mm-panel_has-navbar mm-panel_opened">
+                <div class="mm-navbar">
+                    <a class="mm-navbar__title">Полиум Р</a></div>
+                <ul class="mm-listview">
+                    <li class="mm-listitem"><a href="#" class="mm-listitem__text">Главная</a></li>
+                    <li class="mm-listitem"><a href="#about" class="mm-listitem__text">О Фабрике</a></li>
+                    <li class="mm-listitem"><a href="#management" class="mm-listitem__text">Комманда</a></li>
+                    <li class="mm-listitem"><a href="#sales" class="mm-listitem__text">Производство</a></li>
+                    <li class="mm-listitem"><a href="#development" class="mm-listitem__text">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        head.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        head.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+    </script>
+</body>
+
+</html>
