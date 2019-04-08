@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="author" content="www.frebsite.nl" />
-		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
 
-		<title>jQuery.mmenu demo</title>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="www.frebsite.nl" />
+	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
 
-		<link type="text/css" rel="stylesheet" href="css/demo.css" />
-		<link type="text/css" rel="stylesheet" href="../dist/jquery.mmenu.css" />
+	<title>Швейная фабрика Подиум Р</title>
 
-		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="../dist/jquery.mmenu.js"></script>
-		<script type="text/javascript">$(function() {$('nav#menu').mmenu();});</script>
-	</head>
-	<body>
-		<div id="page">
-			<div class="header">
-				<a href="#menu"><span></span></a>
-				Demo
-			</div>
-			<div class="content">
-				<p><strong>This is a demo.</strong><br />
-					Click the menu icon to open the menu.</p>
-			</div>
-			<nav id="menu">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><span>About us</span>
-						<ul>
-							<li><a href="#about/history">History</a></li>
-							<li><span>The team</span>
-								<ul>
-									<li><a href="#about/team/management">Management</a></li>
-									<li><a href="#about/team/sales">Sales</a></li>
-									<li><a href="#about/team/development">Development</a></li>
-								</ul>
-							</li>
-							<li><a href="#about/address">Our address</a></li>
-						</ul>
-					</li>
-					<li><a href="#contact">Contact</a></li>
+	<link type="text/css" rel="stylesheet" href="css/demo.css" />
+	<link type="text/css" rel="stylesheet" href="js/jquery.mmenu.all.css" />
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('nav#menu').mmenu({
+				'extensions': ['pagedim-black', 'position-right', 'theme-black']
+			});
+		});</script>
+</head>
 
-					<li class="Divider">Other demos</li>
-					<li><a href="advanced.html">Advanced demo</a></li>
-					<li><a href="onepage.html">One page demo</a></li>
-				</ul>
-			</nav>
+<body>
+	<div class="fullscreen-bg">
+		<video poster="http://www.helaclothing.com/themes/hela_clothing/assets/images/bg-home.jpg" loop="" muted=""
+			autoplay="" x-webkit-airplay="allow" webkit-playsinline="webkit-playsinline" playsinline="playsinline"
+			data-video="0">
+			<source src="http://www.helaclothing.com/themes/hela_clothing/assets/images/bg-home.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div id="page">
+		<p class="text-right"><a href="#menu"><i class="fas fa-bars"></i></a> </p>
+	</div>
+	<div class="row">
+		<div class="col">
+			<img class="img_logo animated fadeIn delay-1s" src="img/logo.png" alt="Швейная фабрика Подиум Р">
+			<p class="phone"><h7>+7 800 777 9805</h7></P>
+
 		</div>
-	</body>
+	</div>
+
+
+	<div class="content">
+
+	</div>
+	<nav id="menu">
+		<ul>
+			<li><a href="#">Главная</a></li>
+			<li><a href="#about">О Фабрике</a>
+			<li><a href="#management">Комманда</a></li>
+			<li><a href="#sales">Производство</a></li>
+			<li><a href="#development">Контакты</a></li>
+		</ul>
+	</nav>
+
+</body>
+
 </html>

@@ -2,14 +2,15 @@ html, body
 {
 	padding: 0;
 	margin: 0;
+	width: 99%;
 }
 body
 {
-	background-color: #fff;
+	background-color: #000!important;
 	font-family: Arial, Helvetica, Verdana;
 	font-size: 14px;
 	line-height: 22px;
-	color: #666;
+	color: #666!important;
 	position: relative;
 	-webkit-text-size-adjust: none;
 }
@@ -108,4 +109,36 @@ nav:not(.mm-menu)
 .content
 {
 	padding: 150px 50px 50px 50px;
+}
+.fullscreen-bg video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+	z-index: -100;
+}
+.img_logo {
+	margin-top: 20%;
+	margin-left: 20%;
+	margin-bottom: 15px;
+	width: 300px;
+    height: auto;
+    filter: invert(100%);
+   
+}
+.fas {
+	margin-top: 10px;
+	margin-right: 10px;
+	color: #fff;
+	font-size: 30px;
+}
+.phone {
+	color: #fff;
+}
+h7 {
+	margin-left: 20%;
+	font-size: 20px;
 }
